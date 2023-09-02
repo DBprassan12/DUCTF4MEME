@@ -2,6 +2,7 @@
 var logo = document.getElementById('logo');
 var button = document.querySelector('button');
 const audioElement = document.getElementById("audio");
+const content = document.querySelector(".container-hidden");
 
 
 
