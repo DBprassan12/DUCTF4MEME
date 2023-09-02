@@ -22,3 +22,11 @@ button.addEventListener('click', function() {
 
 
 });
+
+
+
+const audio = new Audio('Assets/coolsong.mp3'); // Replace with your audio file path
+
+document.body.addEventListener('click', () => {
+  audio.play();
+});
