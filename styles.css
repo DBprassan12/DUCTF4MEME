@@ -41,7 +41,7 @@ button {
     top: 0;
     left: 0;
     position: absolute;
-    height: 250px;;
+    width: 250px;
     animation-name: zoom;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -98,4 +98,28 @@ img {
 
 
 
-.
+@keyframes moveImage {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(1500px, 0); }
+    50% { transform: translate(1500px, 900px); }
+    75% { transform: translate(0, 900px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Apply the animation to the image */
+.monek1 {
+    animation: moveImage 5s linear infinite;
+}
+
+.monek2 {
+    animation: moveImage 4s linear infinite;
+}
+
+.monek3 {
+    animation: moveImage 2s linear infinite;
+}
+
+
+.monek4 {
+    animation: moveImage 6s linear infinite;
+}
