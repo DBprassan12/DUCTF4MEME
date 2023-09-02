@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #171a1f;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c2c549;
+    color: #171a1f;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add styling for the image */
+#logo {
+    height: auto; 
+    margin-bottom: 20px; /* Adds spacing between the image and button */
+}
+
+
+
+#video{
+    display:none;
+}
