@@ -33,6 +33,18 @@ button {
 .meme {
     text-align: center;
     display: none;
+    
+}
+
+
+.monkes{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 250px;;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -82,3 +94,8 @@ img {
         background-position: 100% 0;
     }
 }
+
+
+
+
+.
