@@ -30,19 +30,21 @@ button {
 
 
 
-#video{
-    display:none;
-}
-
-
-
 .meme {
+    text-align: center;
     display: none;
 }
 
-h1 {
-    color: white;
-}   
+
+.meme img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+h1.hometown{
+    color: wheat;
+}
 
 
 
@@ -50,6 +52,7 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
 
 
 

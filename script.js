@@ -2,6 +2,7 @@
 var logo = document.getElementById('logo');
 var button = document.querySelector('button');
 const audioElement = document.getElementById("audio");
+const audioElement2 = document.getElementById("monkenoise");
 const content = document.querySelector(".container-hidden");
 var invisibleElements = document.querySelectorAll('.meme');
 
@@ -12,6 +13,7 @@ button.addEventListener('click', function() {
     logo.style.display = 'none';
     button.style.display = 'none';
     audioElement.play();
+    audioElement2.play();
 
 
     for (var i = 0; i < invisibleElements.length; i++) {
