@@ -108,18 +108,18 @@ img {
 
 /* Apply the animation to the image */
 .monek1 {
-    animation: moveImage 12s linear infinite;
+    animation: moveImage 10s linear infinite;
 }
 
 .monek2 {
-    animation: moveImage 17s linear infinite;
+    animation: moveImage 8s linear infinite;
 }
 
 .monek3 {
-    animation: moveImage 15s linear infinite;
+    animation: moveImage 6s linear infinite;
 }
 
 
 .monek4 {
-    animation: moveImage 9s linear infinite;
+    animation: moveImage 4s linear infinite;
 }
