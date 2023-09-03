@@ -47,6 +47,7 @@ button {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+
 .meme img {
     display: block;
     margin: 0 auto;
@@ -169,6 +170,13 @@ img {
     }
   }
   
+
+  .msp1{
+    top: 10;
+    left: 20;
+    position: absolute;
+    width: 250px;
+}
 
 
 

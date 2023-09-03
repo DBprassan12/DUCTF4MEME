@@ -15,7 +15,6 @@ const backgroundImageUrls = [
   "Assets/wall1.jpg",
   "Assets/wall5.gif",
   "Assets/Shipwrecked.jpg",
-  "Assets/wall2.jpg",
   "Assets/wall3.jpg",
   "Assets/wall4.jpg",
   "Assets/monke2.gif"
