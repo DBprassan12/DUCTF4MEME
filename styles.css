@@ -5,7 +5,16 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #171a1f;
+    background-image: none; /* Default background image */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
+
+
+
+
 .container {
     text-align: center;
 }
@@ -118,6 +127,10 @@ img {
 .monek8 {
     animation: moveImage 9s linear infinite;
 }
+.monek9 {
+    animation: moveImage 2s linear infinite;
+}
+
 
 
 .musicmonke {

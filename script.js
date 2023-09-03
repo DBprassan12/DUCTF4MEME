@@ -8,13 +8,47 @@ var invisibleElements = document.querySelectorAll('.meme');
 const imageContainer = document.getElementById('imageContainer');
 
 
-// Add a click event listener to the button
+
+const body = document.body;
+
+const backgroundImageUrls = [
+  "Assets/wall1.jpg",
+  "Assets/Shipwrecked.jpg",
+  "Assets/wall2.jpg",
+  "Assets/wall3.jpg",
+  "Assets/wall4.jpg",
+  "Assets/monke2.gif"
+  
+];
+
+
+
+
+
+
+
+
+let currentBackgroundIndex = 0;
+
 button.addEventListener('click', function() {
-    // Hide the logo and button by setting their display to 'none'
     logo.style.display = 'none';
     button.style.display = 'none';
     audioElement.play();
     audioElement2.play();
+
+    function changeBackground() {
+      currentBackgroundIndex = (currentBackgroundIndex + 1) % backgroundImageUrls.length;
+      const selectedImageUrl = backgroundImageUrls[currentBackgroundIndex];
+      
+      body.style.backgroundColor = "transparent"; // Remove background color
+      body.style.backgroundImage = `url(${selectedImageUrl})`;
+    }
+    
+    
+    // Automatically change background image every 3 seconds
+    setInterval(changeBackground, 3000);
+
+
 
 
     for (var i = 0; i < invisibleElements.length; i++) {
@@ -46,9 +80,6 @@ button.addEventListener('click', function() {
             }, Math.round(Math.random() * i * 500));
         });
     }, false);
-
-
-
 
 });
 

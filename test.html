@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f0f0f0; /* Default background color */
+      background-image: none; /* Default background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+  <title>Background Changer</title>
+</head>
+<body>
+  <button id="changeBackgroundBtn">Change Background</button>
+  <script>
+    const changeBackgroundBtn = document.getElementById("changeBackgroundBtn");
+    const body = document.body;
+    
+    // Array of background image URLs
+    const backgroundImageUrls = [
+      "Assets/monke8.jpg",
+      "Assets/Shipwrecked.jpg",
+      "Assets/monke2.gif"
+    ];
+    
+    let currentBackgroundIndex = 0;
+    
+    function changeBackground() {
+      currentBackgroundIndex = (currentBackgroundIndex + 1) % backgroundImageUrls.length;
+      const selectedImageUrl = backgroundImageUrls[currentBackgroundIndex];
+      
+      body.style.backgroundColor = "transparent"; // Remove background color
+      body.style.backgroundImage = `url(${selectedImageUrl})`;
+    }
+    
+    changeBackgroundBtn.addEventListener("click", changeBackground);
+    
+    // Automatically change background image every 3 seconds
+    setInterval(changeBackground, 3000);
+  </script>
+</body>
+</html>
