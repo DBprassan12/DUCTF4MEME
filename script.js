@@ -13,6 +13,7 @@ const body = document.body;
 
 const backgroundImageUrls = [
   "Assets/wall1.jpg",
+  "Assets/wall5.gif",
   "Assets/Shipwrecked.jpg",
   "Assets/wall2.jpg",
   "Assets/wall3.jpg",
@@ -53,6 +54,20 @@ button.addEventListener('click', function() {
 
 
 
+
+
+    const audio = new Audio('Assets/coolsong.mp3'); 
+
+    document.body.addEventListener('click', () => {
+        audio.play();
+    });
+
+    const monday = new Audio('Assets/mondaysound.mp3'); 
+    document.body.addEventListener('click', () => {
+      monday.play();
+    });
+
+
     window.addEventListener('mousemove', function(e) {
         [1, .9, .8, .5, .1].forEach(function(i) {
             var j = (1 - i) * 50;
@@ -80,12 +95,6 @@ button.addEventListener('click', function() {
 });
 
 
-
-const audio = new Audio('Assets/coolsong.mp3'); // Replace with your audio file path
-
-document.body.addEventListener('click', () => {
-    audio.play();
-});
 
 
 
