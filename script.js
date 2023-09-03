@@ -60,13 +60,21 @@ button.addEventListener('click', function() {
     const audio = new Audio('Assets/coolsong.mp3'); 
 
     document.body.addEventListener('click', () => {
-        audio.play();
-    });
+      audio.play();
+     });
 
     const monday = new Audio('Assets/mondaysound.mp3'); 
     document.body.addEventListener('click', () => {
       monday.play();
     });
+
+
+
+    const boom = new Audio('Assets/boom.wav'); 
+    document.body.addEventListener('click', () => {
+      boom.play();
+    });
+
 
 
     window.addEventListener('mousemove', function(e) {

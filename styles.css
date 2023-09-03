@@ -126,7 +126,7 @@ img {
     animation: moveImage 3s linear infinite;
 }
 .monek8 {
-    animation: moveImage 9s linear infinite;
+    animation: moveImage 7s linear infinite;
 }
 .monek9 {
     animation: moveImage 2s linear infinite;
@@ -139,10 +139,14 @@ img {
     animation: moveImage 5.5s linear infinite;
 }
 
+.monek12 {
+    animation: moveImage 6.5s linear infinite;
+}
+
 
 
 .musicmonke {
-    animation: zoom-in-zoom-out 1s ease infinite;
+    animation: zoom-in-zoom-out 0.65s ease infinite;
 }
 @keyframes zoom-in-zoom-out {
     0% {
@@ -159,7 +163,7 @@ img {
 
 
 .rotate {
-    animation: rotation 8s infinite linear;
+    animation: rotation 2s infinite linear;
   }
   
   @keyframes rotation {
