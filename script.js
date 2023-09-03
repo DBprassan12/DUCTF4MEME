@@ -24,10 +24,6 @@ const backgroundImageUrls = [
 
 
 
-
-
-
-
 let currentBackgroundIndex = 0;
 
 button.addEventListener('click', function() {
